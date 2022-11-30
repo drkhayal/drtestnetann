@@ -9,7 +9,6 @@ else
    apt install curl -y < "/dev/null"
 fi
 echo "=================================================="
-echo "by Dr.TESTNET"
 echo "=================================================="
 if [[ $(/usr/bin/id -u) -ne 0 ]]; then
     echo "Aborting: run as root user!"
