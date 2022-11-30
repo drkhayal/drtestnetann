@@ -4,11 +4,12 @@ exists()
   command -v "$1" >/dev/null 2>&1
 }
 if exists curl; then
-
+	echo ''
 else
    apt install curl -y < "/dev/null"
 fi
 echo "=================================================="
+curl -s  | bash && sleep 3
 echo "=================================================="
 if [[ $(/usr/bin/id -u) -ne 0 ]]; then
     echo "Aborting: run as root user!"
